@@ -105,10 +105,9 @@ public class JobData {
 
            for (String e : row.keySet()) {
 
-               if (jobs.contains(row)) {
-
-               } else if (row.get(e).toLowerCase().contains(value.toLowerCase())) {
+               if (row.get(e).toLowerCase().contains(value.toLowerCase())) {
                    jobs.add(row);
+                   break;
                }
            }
         }
